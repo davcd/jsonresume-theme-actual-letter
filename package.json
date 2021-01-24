@@ -13,9 +13,9 @@
     "url": "https://github.com/davcd/jsonresume-theme-actual-letter"
   },
   "scripts": {
-    "create-html": "resume export public/letter.html --format html --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
-    "create-pdf": "resume export public/letter.pdf --format pdf --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
-    "create-docs": "resume export docs/letter.pdf --format pdf --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
+    "create-html": "resume export public/letter.html --format html --theme .",
+    "create-pdf": "resume export public/letter.pdf --format pdf --theme .",
+    "create-docs": "resume export docs/letter.pdf --format pdf --theme .",
     "validate": "resume test",
     "test": "jest",
     "test:watch": "jest --watchAll",
