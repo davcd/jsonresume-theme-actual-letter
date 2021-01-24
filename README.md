@@ -33,8 +33,8 @@ npm install -g resume-cli
 ```bash
 npm install jsonresume-theme-actual-letter
 
-resume export letter.pdf --format pdf --theme actual
-resume export letter.html --format html --theme actual
+resume export letter.pdf --format pdf --theme actual-letter
+resume export letter.html --format html --theme actual-letter
 ```
 
 ## Contribute
