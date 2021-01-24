@@ -6,6 +6,7 @@ const bs = require('browser-sync').create()
 
 const fs = require('fs')
 const helper = require('./assets/helper.js')
+const index = require('./index.js')
 
 function css() {
     return src("./assets/styles.scss")
@@ -18,7 +19,7 @@ function html() {
     const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'))
 
     return src('./assets/template.pug')
-        .pipe(pug({data: {resume, helper}}))
+        .pipe(pug({data: {resume: index.mergeResume(resume), helper}}))
         .pipe(dest('./public'))
 }
 
