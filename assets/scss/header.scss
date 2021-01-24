@@ -1,0 +1,21 @@
+.header {
+  padding-top: 35px;
+  text-align: right;
+
+  ul {
+    font-size: $header-font-size;
+    list-style-type: none;
+    break-inside: avoid;
+
+    li {
+      line-height: 1.5em;
+
+      &.name {
+        font-weight: bold;
+      }
+      &.margin-text {
+        margin-top: 0.8em;
+      }
+    }
+  }
+}

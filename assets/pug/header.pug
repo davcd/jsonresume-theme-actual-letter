@@ -1,0 +1,7 @@
+div(class='header')
+    ul
+        li(class='name')=resume.basics.name
+        li(class='margin-text')=resume.basics.phone
+        li=resume.basics.email
+        li(class='margin-text')=helper.calcLocation(resume.basics.location)
+        li=helper.getCurrentDate()

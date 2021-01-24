@@ -1,0 +1,41 @@
+{
+  "name": "jsonresume-theme-actual-letter",
+  "main": "index.js",
+  "files": [
+    "/assets",
+    "index.js"
+  ],
+  "version": "0.0.1",
+  "description": "Actual letter theme for JSON Resume",
+  "author": "David Carvajal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davcd/jsonresume-theme-actual-letter"
+  },
+  "scripts": {
+    "create-html": "resume export public/letter.html --format html --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
+    "create-pdf": "resume export public/letter.pdf --format pdf --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
+    "create-docs": "resume export docs/letter.pdf --format pdf --theme /Users/davcd/Projects/jsonresume/jsonresume-theme-actual-letter",
+    "validate": "resume test",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "gulp": "gulp",
+    "gulp:css": "gulp css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "iso-3166-1": "^2.0.1",
+    "markdown-it": "^12.0.4",
+    "moment": "^2.29.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "html-validate": "^4.3.0",
+    "jest": "^26.6.3",
+    "mockdate": "^3.0.2"
+  }
+}
