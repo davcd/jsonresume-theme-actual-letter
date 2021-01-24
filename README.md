@@ -29,6 +29,10 @@ npm install -g resume-cli
 ## Export letter
 
 - Create your [resume.json](https://jsonresume.org/schema/) file (you can start by editing [this](/resume.json))
+- Create your [cover-letter.md](/cover-letter.md) (optional)
+
+> You can inform the body of your letter by adding the `resume.basics.coverLetter` to your `resume.json` file, or by creating a file `cover-letter.md` file
+
 
 ```bash
 npm install jsonresume-theme-actual-letter
@@ -52,9 +56,9 @@ You can live edit any .scss or .pug file
 
 ## Support
 
-This theme supports only the `resume.basics` JSON path
-
 ### `resume.basics`
+
+This theme supports only the `resume.basics` JSON path
 
 ```json
 {
@@ -62,7 +66,7 @@ This theme supports only the `resume.basics` JSON path
     "name": "Richard Hendriks",
     "email": "rhendriks@mail.com",
     "phone": "(912) 555-4321",
-    "summary": "Dear Robert C. Martin, I want to express my interest in the open position...",
+    "coverLetter": "Dear Robert C. Martin, I want to express my interest in the open position...",
     "location": {
       "city": "San Francisco",
       "countryCode": "US",
@@ -72,4 +76,8 @@ This theme supports only the `resume.basics` JSON path
 }
 ```
 
-- `resume.basics.summary` supports markdown and contains the cover letter
+- `resume.basics.coverLetter` supports markdown
+
+### `cover-letter.md` file
+
+If `resume.basics.coverLetter` JSON path is missing, this theme will look for a `cover-letter.md` file to retrieve the body of the letter
