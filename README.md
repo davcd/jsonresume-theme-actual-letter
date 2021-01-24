@@ -29,7 +29,7 @@ npm install -g resume-cli
 ## Export letter
 
 - Create your [resume.json](https://jsonresume.org/schema/) file (you can start by editing [this](/resume.json))
-- Create your [cover-letter.md](/cover-letter.md) (optional)
+- Create your [cover-letter.md](/cover-letter.md) file (optional)
 
 > You can inform the body of your letter by adding the `resume.basics.coverLetter` to your `resume.json` file, or by creating a file `cover-letter.md` file
 
