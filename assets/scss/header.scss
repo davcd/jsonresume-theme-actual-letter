@@ -8,14 +8,14 @@
     break-inside: avoid;
 
     li {
-      line-height: 1.5em;
+      line-height: $line-height;
 
       &.name {
         font-weight: bold;
       }
 
       &.margin-text {
-        margin-top: 0.8em;
+        margin-top: $margin-text;
       }
     }
   }

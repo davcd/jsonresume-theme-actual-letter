@@ -101,13 +101,13 @@ p {
   break-inside: avoid;
 }
 .header ul li {
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 .header ul li.name {
   font-weight: bold;
 }
 .header ul li.margin-text {
-  margin-top: 0.8em;
+  margin-top: 14px;
 }
 
 .letter {
